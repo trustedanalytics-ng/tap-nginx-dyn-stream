@@ -20,7 +20,7 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/trustedanalytics/tap-go-common/util"
+	"github.com/trustedanalytics-ng/tap-go-common/util"
 )
 
 var tools UtilAPI = NewUtilTools(&SystemUtils{})

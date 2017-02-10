@@ -31,13 +31,13 @@ docker_build: build_anywhere
 	docker build -t tap-api-service .
 
 prepare_dirs:
-	mkdir -p ./temp/src/github.com/trustedanalytics/$(PROJECT_NAME)
+	mkdir -p ./temp/src/github.com/trustedanalytics-ng/$(PROJECT_NAME)
 	$(eval REPOFILES=$(shell pwd)/*)
-	ln -sf $(REPOFILES) temp/src/github.com/trustedanalytics/$(PROJECT_NAME)
+	ln -sf $(REPOFILES) temp/src/github.com/trustedanalytics-ng/$(PROJECT_NAME)
 
 build_anywhere: prepare_dirs
 	$(eval GOPATH=$(shell cd ./temp; pwd))
-	$(eval APP_DIR_LIST=$(shell GOPATH=$(GOPATH) go list ./temp/src/github.com/trustedanalytics/$(PROJECT_NAME)/... | grep -v /vendor/))
+	$(eval APP_DIR_LIST=$(shell GOPATH=$(GOPATH) go list ./temp/src/github.com/trustedanalytics-ng/$(PROJECT_NAME)/... | grep -v /vendor/))
 	GOPATH=$(GOPATH) CGO_ENABLED=0 go build -tags netgo $(APP_DIR_LIST)
 	rm -Rf application && mkdir application
 	cp ./$(PROJECT_NAME) ./application/$(PROJECT_NAME)

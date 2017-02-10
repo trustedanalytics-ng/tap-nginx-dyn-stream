@@ -23,7 +23,7 @@ import (
 
 	"github.com/op/go-logging"
 
-	commonLogger "github.com/trustedanalytics/tap-go-common/logger"
+	commonLogger "github.com/trustedanalytics-ng/tap-go-common/logger"
 )
 
 var logger = initLogger()

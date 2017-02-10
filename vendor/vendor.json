@@ -64,16 +64,16 @@
 		},
 		{
 			"checksumSHA1": "O4sIfCHeupMT91S+wt73AAfH4bQ=",
-			"path": "github.com/trustedanalytics/tap-go-common/logger",
+			"path": "github.com/trustedanalytics-ng/tap-go-common/logger",
 			"revision": "5c87e2ae26dae67a2f3fad7a8904766a3f9516a4",
 			"revisionTime": "2016-12-02T09:10:17Z"
 		},
 		{
 			"checksumSHA1": "V0IlH/wRf98Bfj4hTll4Kucx/3k=",
-			"path": "github.com/trustedanalytics/tap-go-common/util",
+			"path": "github.com/trustedanalytics-ng/tap-go-common/util",
 			"revision": "70140c7c019feb1ea22c67c2dda45eb624f53f09",
 			"revisionTime": "2017-01-04T15:54:40Z"
 		}
 	],
-	"rootPath": "github.com/trustedanalytics/tap-nginx-dyn-stream"
+	"rootPath": "github.com/trustedanalytics-ng/tap-nginx-dyn-stream"
 }
